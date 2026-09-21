@@ -50,7 +50,7 @@ This is **closed-loop attribution**: tying marketing engagement metrics to real,
               └───────────────────────┘
 ```
 
-**Live Dashboard:** [LOOKER STUDIO LINK HERE]
+**Live Dashboard:** [[LOOKER STUDIO LINK HERE]](https://datastudio.google.com/reporting/fbfab9d7-1f77-46fe-b274-6fa81f793256)
 
 ---
 
