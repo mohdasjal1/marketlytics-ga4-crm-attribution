@@ -1,17 +1,16 @@
-# MarketLytics: GA4 + CRM Closed-Loop Attribution Prototype
+# MarketLytics: GA4 + CRM Closed-Loop Attribution
 
-> **Built overnight** as a fast data engineering prototype for a Data Solutions Associate interview.  
-> This is a conceptual validation of GA4/CRM/BigQuery integration — not a polished production system.
+A data pipeline that joins **Google Analytics 4 behavioral data** (sessions, purchases) with **CRM pipeline data** (leads, closed deals, revenue) by acquisition channel — connecting top-of-funnel activity to bottom-of-funnel business outcomes.
 
 ---
 
 ## What This Proves
 
-Most marketing analytics stops at "which channel drove clicks." This prototype goes further — joining **Google Analytics 4 behavioral data** (sessions, purchases) with **CRM pipeline data** (leads, closed deals, revenue) by acquisition channel to answer:
+Most marketing analytics stops at "which channel drove clicks." This project goes further, answering questions like:
 
 > *"Google CPC drove X sessions but only $Y in actual closed revenue, while organic drove fewer sessions but a higher close rate."*
 
-This is **closed-loop attribution**: connecting top-of-funnel activity to bottom-of-funnel business outcomes.
+This is **closed-loop attribution**: tying marketing engagement metrics to real, CRM-verified revenue outcomes, rather than relying on click/session volume as a proxy for business impact.
 
 ---
 
@@ -86,24 +85,24 @@ This is **closed-loop attribution**: connecting top-of-funnel activity to bottom
 
 ## How AI Was Used
 
-This project was built with **Claude Opus 4.7 via Antigravity IDE** as a pair-programming assistant. Here's specifically how AI was used at each step, and what I directed/reviewed:
+This project was built with **Claude Opus 4.7 via Antigravity IDE** as a pair-programming assistant. Direction and review were mine at every step; AI accelerated the SQL/Python generation.
 
-| Step | My Role (Direction & Review) | AI Role (Execution) |
+| Step | Direction & Review | AI Execution |
 |---|---|---|
-| **GA4 schema exploration** | I identified the dataset and confirmed access with a test query. Asked AI to explain the nested RECORD/STRUCT schema. | Generated INFORMATION_SCHEMA queries, UNNEST examples, and explained the difference between dot-access STRUCTs vs arrays requiring UNNEST. |
-| **Funnel query** | I specified the funnel stages and grouping dimensions. Reviewed output to confirm COUNTIF logic was correct. | Wrote the conditional aggregation query with wildcard table syntax. |
-| **Synthetic CRM data** | I provided the exact GA4 traffic_source values the UTM fields needed to match. Reviewed the distribution outputs to verify realism. | Built the Faker script with weighted sampling, lifecycle funnel drop-off, and null-handling for deal_value/close_date. |
-| **Attribution join** | I defined the "closed-loop" concept and specified LEFT JOIN direction + LOWER() cleaning. Reviewed the join keys and COALESCE logic. | Wrote the CTE-based join query and suggested the interview caveat about synthetic vs. causal attribution. |
-| **Dashboard** | I designed the layout, chose chart types, and configured Looker Studio manually. | N/A — dashboard was built entirely by me in Looker Studio. |
+| **GA4 schema exploration** | Identified the dataset, confirmed access with a test query, requested explanation of the nested RECORD/STRUCT schema. | Generated INFORMATION_SCHEMA queries, UNNEST examples, and explained dot-access STRUCTs vs. arrays requiring UNNEST. |
+| **Funnel query** | Specified funnel stages and grouping dimensions, reviewed output to confirm COUNTIF logic was correct. | Wrote the conditional aggregation query with wildcard table syntax. |
+| **Synthetic CRM data** | Provided the real GA4 traffic_source values the UTM fields needed to match, reviewed distribution output for realism. | Built the Faker script with weighted sampling, lifecycle funnel drop-off, and null-handling for deal_value/close_date. |
+| **Attribution join** | Defined the closed-loop concept, specified LEFT JOIN direction and LOWER() cleaning, reviewed join keys and COALESCE logic. | Wrote the CTE-based join query and flagged the caveat around synthetic vs. causal attribution. |
+| **Dashboard** | Designed the layout, chose chart types, configured Looker Studio manually. | N/A — built directly in Looker Studio. |
 
-**Key point:** AI accelerated SQL/Python generation, but every architectural decision (what to join, how to model the funnel, what the output should prove) was mine. I reviewed all output before running it.
+Every architectural decision — what to join, how to model the funnel, what the output should prove — was directed and reviewed manually before running.
 
 ---
 
 ## Known Limitations & Caveats
 
 - **Synthetic CRM data:** The CRM dataset's UTM distribution statistically mirrors GA4's real traffic mix, but is not causally linked to actual GA4 sessions. The join is directionally realistic, not individually traced.
-- **Production upgrade path:** In a real system, you'd close this loop by passing a `client_id` or `GCLID` from GA4 through to the CRM via hidden form fields, enabling true 1:1 user-level attribution.
+- **Production upgrade path:** A real system would close this loop by passing a `client_id` or `GCLID` from GA4 through to the CRM via hidden form fields, enabling true 1:1 user-level attribution.
 - **Date range:** Queries use a 7-day window (Nov 1–7, 2020) from the public GA4 sample. The full dataset covers Nov 2020 – Jan 2021.
 - **Free tier:** All queries run within BigQuery's free-tier quota (1 TB/month scanned). Each query scans ~50–600 MB.
 
@@ -120,7 +119,3 @@ python python/generate_crm_data.py
 # 3. Run SQL files in order in BigQuery console
 # 4. Connect BigQuery views to Looker Studio
 ```
-
----
-
-*Built September 2026 · Karachi, Pakistan*
