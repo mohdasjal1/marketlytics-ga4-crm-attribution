@@ -1,0 +1,51 @@
+lead_id,created_date,contact_name,contact_email,utm_source,utm_medium,utm_campaign,lifecycle_stage,deal_value,close_date
+LEAD-00001,2020-12-02,Allison Hill,donaldgarcia@example.net,(direct),(none),(direct),SQL,,
+LEAD-00002,2021-01-09,Angie Henderson,davisjesse@example.net,google,organic,organic_blog,Lead,,
+LEAD-00003,2020-11-12,Cristian Santos,lrobinson@example.com,google,organic,(not set),Lead,,
+LEAD-00004,2021-01-11,Abigail Shaffer,jpeterson@example.org,google,organic,organic_blog,SQL,,
+LEAD-00005,2020-12-24,Gabrielle Davis,howardmaurice@example.com,google,organic,organic_blog,SQL,,
+LEAD-00006,2020-11-01,Monica Herrera,smiller@example.net,google,organic,organic_blog,Lead,,
+LEAD-00007,2020-12-14,Shannon Ray,williamsjeremy@example.com,<Other>,referral,social_share,SQL,,
+LEAD-00008,2020-12-14,Dr. Sharon James,xreid@example.org,google,organic,(organic),Closed Lost,555.94,2021-02-07
+LEAD-00009,2020-11-06,Daniel Adams,lynchgeorge@example.net,google,organic,(not set),SQL,,
+LEAD-00010,2020-12-19,Joel Nelson,gabriellecameron@example.org,shop.googlemerchandisestore.com,referral,merch_store_referral,Closed Lost,440.06,2021-02-01
+LEAD-00011,2020-12-17,Andrew Stewart,carl95@example.org,<Other>,referral,partner_blog,Closed Won,2907.89,2021-01-01
+LEAD-00012,2020-11-11,Jennifer Rocha,ithomas@example.org,google,organic,(organic),Opportunity,4283.82,
+LEAD-00013,2021-01-21,Kimberly Burgess,zhurst@example.com,google,cpc,holiday_promo,Lead,,
+LEAD-00014,2020-11-27,Zachary Hicks,camposmichelle@example.org,google,cpc,brand_search_q4,MQL,,
+LEAD-00015,2020-11-22,Rebecca Henderson,cruzcaitlin@example.com,shop.googlemerchandisestore.com,referral,merch_store_referral,SQL,,
+LEAD-00016,2020-12-19,Tricia Valencia,frazierdanny@example.net,(direct),(none),(direct),Lead,,
+LEAD-00017,2020-11-29,Patricia Peterson,ryan70@example.net,google,organic,organic_blog,SQL,,
+LEAD-00018,2020-11-05,Deborah Mason,williamrodriguez@example.net,shop.googlemerchandisestore.com,referral,merch_store_referral,Lead,,
+LEAD-00019,2020-11-28,Mark Lynch,nathanielmartin@example.net,<Other>,referral,community_post,Lead,,
+LEAD-00020,2020-12-11,Linda Burns,hickmannatasha@example.com,google,cpc,retargeting_nov,Closed Won,1102.5,2021-02-19
+LEAD-00021,2020-12-04,David Bradley,millertodd@example.org,google,organic,organic_blog,MQL,,
+LEAD-00022,2020-12-04,Kim Martinez,karroyo@example.com,google,organic,organic_blog,MQL,,
+LEAD-00023,2020-12-22,Lisa Brandt,jenniferross@example.net,shop.googlemerchandisestore.com,referral,partner_link,Closed Won,1841.88,2021-01-15
+LEAD-00024,2020-11-15,Jessica Holmes,wrightcaleb@example.org,(direct),(none),(direct),Opportunity,806.56,
+LEAD-00025,2020-11-09,Crystal Robinson,zimmermanbrian@example.org,google,organic,organic_blog,MQL,,
+LEAD-00026,2021-01-07,Shannon Jones,joshuawashington@example.net,google,organic,organic_blog,Closed Lost,1294.5,2021-03-25
+LEAD-00027,2020-11-15,Timothy Duncan,esanchez@example.com,google,cpc,brand_search_q4,SQL,,
+LEAD-00028,2020-12-14,Brent Jordan,ujenkins@example.org,shop.googlemerchandisestore.com,referral,partner_link,Opportunity,602.18,
+LEAD-00029,2020-12-04,Victoria Garcia,zchandler@example.org,(direct),(none),(not set),Lead,,
+LEAD-00030,2020-11-14,Connor West,dwhite@example.org,newsletter,email,nov_digest,MQL,,
+LEAD-00031,2021-01-04,Angela Morton,williamsyvette@example.org,google,cpc,holiday_promo,Opportunity,3064.4,
+LEAD-00032,2021-01-07,Tammy Allison,richardolson@example.com,google,organic,(organic),MQL,,
+LEAD-00033,2020-11-03,Carmen Smith,ybaker@example.com,google,cpc,retargeting_nov,Lead,,
+LEAD-00034,2020-12-10,Michael Cross,smoore@example.org,google,organic,(not set),Closed Won,1235.29,2021-01-16
+LEAD-00035,2021-01-02,Lauren Daniels,brian97@example.net,google,cpc,brand_search_q4,Lead,,
+LEAD-00036,2020-11-17,Kim Brown,yorkcasey@example.org,<Other>,referral,partner_blog,Opportunity,3315.77,
+LEAD-00037,2021-01-17,Cynthia Wilson,bethwilliams@example.org,(data deleted),(data deleted),(data deleted),Lead,,
+LEAD-00038,2021-01-28,Kevin Mills,james53@example.com,(direct),(none),(direct),Closed Won,1045.7,2021-03-15
+LEAD-00039,2020-12-27,Michael Evans,sarah10@example.com,google,organic,organic_blog,SQL,,
+LEAD-00040,2020-11-29,Kristine Garcia,williamanderson@example.com,google,cpc,holiday_promo,Lead,,
+LEAD-00041,2020-11-30,Sherry Wood,samueldaniels@example.com,google,organic,(organic),MQL,,
+LEAD-00042,2021-01-20,Victoria Valdez,contrerasangela@example.net,(direct),(none),(direct),Lead,,
+LEAD-00043,2020-12-13,Shawn Baker,newtoneric@example.com,google,organic,(organic),Closed Won,400.74,2021-01-19
+LEAD-00044,2020-11-17,Michelle Harris,william40@example.org,google,organic,(not set),Lead,,
+LEAD-00045,2020-12-31,Sandra Williams,kellie42@example.net,shop.googlemerchandisestore.com,referral,partner_link,Lead,,
+LEAD-00046,2021-01-24,Michael Hoffman,jonesnicole@example.org,<Other>,referral,social_share,Lead,,
+LEAD-00047,2020-11-07,Sandra Aguilar,russellwilliams@example.com,(direct),(none),(not set),MQL,,
+LEAD-00048,2020-12-14,Rebecca Valencia,jason31@example.com,shop.googlemerchandisestore.com,referral,merch_store_referral,Lead,,
+LEAD-00049,2020-11-25,Stacey Russell,sarayoung@example.org,<Other>,referral,social_share,Lead,,
+LEAD-00050,2020-12-06,Rita Keith,whitesandra@example.com,(direct),(none),(direct),MQL,,
